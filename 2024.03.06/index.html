@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Attríbútum szelektorok</title>
+    <style type="text/css">
+        /*img[width]  {border:5px solid red;}*/
+        /*Rendelekzik-e bizonyos értékkel */
+        img[width="100"] {border: 5px solid  red;}
+        /* A szelektált elem-be létezik-e a kersett attribútum*/
+        img[title~="1."] {border: 5px solid rgb(19, 201, 233);}   
+
+    </style>
+</head>
+<body>
+    <img src="http://lorempixel.com/150/150/" alt="">
+<img width="100" height="100" src="http://lorempixel.com/150/150/" alt="" title="1. kép">
+<img width="200" height="200" src="http://lorempixel.com/150/150/" alt="" title="2. kép">
+    
+</body>
+</html>
