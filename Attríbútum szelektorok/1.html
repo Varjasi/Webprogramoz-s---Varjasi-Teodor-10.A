@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Megvizsgáljuk, hogy az elem rendelkezik -e a kersett atribútummal
+    -->
+    <style type="text/css">
+        h1[style] {color: blue;}
+        /* Megvizsgáljuk, hogy az attribútum rendlkezik-e az értékkel */
+        h2[style="color: red;"] {text-align: center;}
+        /* Szóközök által határolt részsorozat-e a keresett attribútumnak az értéke */
+        img[title~="and"] {display: block; margin-left: auto; margin-right: auto; border: 5px solid red;}
+        
+        p[lang|="en"] {background-color: rosybrown;}
+        /*Kötőjelek által határolt részsorozat */
+
+
+
+
+
+
+
+        /* Megvizsgáljuk azt az attribútumot, melyenk értéke a megadott értékkel lkezdődik */
+        p[style^="f"] {font-weight: bolder;}
+
+
+
+
+
+
+
+
+
+
+        /* Megvizsgáljuk azt az attribútumot, melynek értéke a megadott értékkel végződik */
+        /* A korábbi definíciót felülírja, ez a definíció */
+
+        p[lang$="k"] {background-color: yellow;}
+
+
+
+
+        /* Megvizsgáljuk, hogy az atriútum rendelkezik-e a megadott értékkel */
+        p[style*="r"] {text-align: center;}
+
+
+
+
+
+
+        
+    </style>
+    
+    <h1 style="color:aqua;"> Hello world</h1>
+    <h2 width="200" style="color: red;"> Címsor 2</h2>
+    <img src="https://ess.ieee.org.ua/wp-content/uploads/2016/05/ieee_img.jpg__1320x740_q95_crop_subsampling-2_upscale-1024x574.jpg" width="200px" height="auto" title="Institute of Electrical and Electronics Engineers">
+    <figcaption> Institute of Electrical and Electronics Engineers</figcaption>
+    <div class="nyelvek">
+        <p lang="en-us"> Can I take the lift?</p>
+        <p lang="en-uk"> Can I take the elevator?</p>
+    </div>
+    <p lang="en-us"> Can I take the lift?</p>
+    <p lang="hu"> Használhatom a liftet?</p>
+    <p style="font-size: 10px;"> 1-es méret</p>
+    <p style="color: red;"> 2-es méret</p>
+    <p style="font-size: 30px;"> 3-as méret </p>
+
+
+</body>
+</html>
