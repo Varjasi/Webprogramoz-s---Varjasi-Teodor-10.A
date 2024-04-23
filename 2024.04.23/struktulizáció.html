@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Strukturális látszólagos osztályok</title>
+<style type="text/css">
+
+:root {background-color:darkblue;}
+body {
+    margin:20px; 
+    padding:20px;
+    border:1px solid gray;
+    background-color:white;
+     }
+li {list-style-type:none;} /* eltüntetjük a listajelölőt */
+li:first-child {border-top:4px double blue;}
+li:last-child {border-bottom:4px double blue;}
+li:nth-child(2n+1) 
+    {
+    background-color:azure;
+    }
+li:nth-last-of-type(3n) 
+    {
+    background-color:rgb(47, 255, 0);
+    }
+div {border:1px solid blue;}
+ div:empty {display: none;}
+ img:only-child {
+    width: 400px;
+    height: auto;
+ }
+ img:empty {display: block; }
+
+ li:first-of-type {background-color:  yellow;}
+ li:last-child {background-color: red;}
+ 
+</style>
+<body>
+    <!--Az only-child-ot úgy érti, hogy egy adott osztályba csak egy tag van-->
+<div>
+    <img src="diotoro.png" width="100px" height="auto" title="mondóka" alt="mondóka">
+</div>
+<div>
+       
+<h1>Mondóka</h1>
+<ul>
+   <li>Egy – megérett a meggy,</li>
+   <li>kettő – csipkebokor vessző,</li>
+   <li>három – te vagy az én párom,</li>
+   <li>négy – megcsípett a légy,</li>
+   <li>öt – érik a tök,</li>
+   <li>hat – hasad a pad,</li>
+   <li>hét – zsemlét süt a pék,</li>
+   <li>nyolc – üres a polc,</li>
+   <li>kilenc – kis Ferenc,</li>
+   <li id="piros">tíz – tiszta víz.</li>
+   <li type="utolsó">Ha nem tiszta,</li>
+   <li>vidd vissza,</li>
+   <li>a kis cica megissza.</li>
+</ul>
+</div>
+</body>
+</html>

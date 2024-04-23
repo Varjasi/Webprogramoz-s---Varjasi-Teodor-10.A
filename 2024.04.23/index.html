@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Látszólagos osztályok</title>
+<style type="text/css">
+     body {
+           background-color:black;
+           color:white
+          }
+     a:link {color:yellow;}
+     a:visited {color:#ff9900;}
+     a:active {color:red;}
+     a:focus {color:green;} 
+     a:hover {color: blue;}
+   :target {
+             font-style:italic; 
+             border:1px solid white;
+             color: red;
+               }
+              input[type="reset"]:hover {
+                background-color: rgb(30, 172, 215);
+              }
+              input[type="reset"]:active {
+                color: red;
+                background-color: grey;
+    </style>
+  </head>
+  <body>
+   <h1><a id="linkek">Linkgyűjtemény</a></h1>
+   <h2 id="linkek2"> Ez is Linkgyűjtemény </h2>
+   <p><a href="http://www.elte.hu/">ELTE weboldala</a></p>
+   <p><a href="http://www.w3c.hu/">W3C magyar iroda weboldala</a></p>
+   <p><a href="#linkek">Ugrás az előző sorra </a></p>
+   <p> <a href="#linkek2"> Ugrás a következő sorra</a></p>
+   <input type="reset">
+  </body>
+</html>
